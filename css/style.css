@@ -212,3 +212,65 @@ a {
     width: 35px;
     cursor: pointer;
 }
+.characters-section .characters-box-section .characters-list {
+    margin: 1.4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* justify-content: center; */
+    background-color: var(--yellow-color);
+}
+.characters-section .characters-box-section .characters-list .characters-box {
+    /* background-color: #22201c; */
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.characters-section .characters-box-section .characters-list .characters-box .character .stars-4{
+    background-color: #E635E7;
+}
+.characters-section .characters-box-section .characters-list .characters-box .character .stars-5 {
+    background-color: #f9a825;
+}
+.characters-section .characters-box-section .characters-list .characters-box .character {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    position: relative;
+}
+.characters-section .characters-box-section .characters-list .characters-box .character .characters-img {
+    width: 73px;
+    position: relative;
+    border-radius: 6px;
+}
+.characters-section .characters-box-section .characters-list .characters-box .character .elements-img {
+    width: 22px;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #977832;
+    padding: 2px;
+    border-radius: 20px;
+    z-index: 1;
+}
+.characters-section .characters-box-section .characters-list .characters-box .character-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.characters-section .characters-box-section .characters-list .characters-box .character-name .name {
+    font-size: 16px;
+    margin: 4px 0;
+}
+.characters-section .characters-box-section .characters-list .characters-box .character-name .condition {
+    background-color: var(--dark-yellow-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: var(--bold-2);
+}
+
