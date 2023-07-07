@@ -1,0 +1,109 @@
+/* FONT STYLE FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900;1000&family=Quicksand:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+:root {
+    --black-color: #22201c;
+    --white-color: #fef7e6;
+    --light-yellow-color: #fff2d5;
+    --yellow-color: #ffe5aa;
+    --dark-yellow-color: #FFC931;
+    --purple-color: #E635E7;
+    --dark-purple-color: #451046;
+
+    --bold-1: 800;
+    --bold-2: 600;
+    --bold-3: 400;
+    --bold-4: 200;
+    
+    --box-shadow: 0 0 10px rgba(0 0 0/15%);
+}
+body {
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+ul,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+.logo-image {
+    width: 60px;
+}
+
+/* ---------- NAVBAR SECTION ---------- */
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s;
+    /* background-color: var(--black-color); */
+    padding: 1rem 2rem;
+    background: transparent;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(7.5px);
+    z-index: 99;
+}
+.navbar-active {
+    background-color: var(--black-color);
+}
+.navbar .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.navbar .logo-section .title {
+    font-size: 18px;
+    color: #FFB000;
+    font-weight: var(--bold-1);
+}
+.navbar .logo-section .title span {
+    color: #E635E7;
+}
+.navbar .option-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    /* color: var(--white-color); */
+    color: var(--black-color);
+    gap: 2rem;
+    padding-right: 4rem;
+    font-size: 16px;
+}
+.option-section-active {
+    color: var(--white-color);
+}
+.navbar .option-section .option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: var(--bold-1);
+}
+.navbar .option-section .option:hover {
+    color: var(--dark-yellow-color);
+}
+.navbar .option-section .option i {
+    /* color: var(--white-color); */
+    color: var(--black-color);
+}
+.navbar .option-section .option .dropdown-menu {
+    display: block;
+    position: relative;
+    align-items: center;
+    background-color: blue;
+    display: none;
+}
