@@ -91,3 +91,75 @@ a {
     color: var(--black-color);
     font-weight: var(--bold-3);
 }
+.teams-section .teams-box-section .main-teams-box {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.teams-section .teams-box-section .main-teams-box .team-box {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    background-color: var(--yellow-color);
+    margin: 8px;
+    padding: 12px 8px;
+    /* gap: 12px 0; */
+    border-radius: 4px;
+}
+.teams-section .teams-box-section .main-teams-box .team-box .title-teams {
+    font-size: 18px;
+    font-weight: var(--bold-1);
+}
+.teams-section .teams-box-section .main-teams-box .team-box .box{
+    display: flex;
+    justify-content: center;
+}
+.teams-section .teams-box-section .main-teams-box .team-box .box .box-char{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px 0;
+    position: relative;
+}
+.teams-section .teams-box-section .main-teams-box .team-box .title-line {
+    display: flex;
+    justify-content: center;
+    margin: 2px 0;
+}
+.teams-section .teams-box-section .main-teams-box .team-box .title-line .line{
+    height: 2px;
+    width: 20%;
+    background-color: var(--black-color);
+    border-radius: 16px;
+}
+.teams-section .teams-box-section .main-teams-box .team-box .box .box-char .character{
+    margin-top: 12px;
+}
+.teams-section .teams-box-section .main-teams-box .team-box .box .box-char .character .char{
+    width: 72px;
+    margin: 0 12px;
+    border-radius: 6px;
+}
+.teams-section .teams-box-section .main-teams-box .team-box .box .box-char .character .char:hover {
+    transform: scale(1.1);
+    transition: .4s;
+    box-shadow: var(--box-shadow);
+    filter: contrast(120%);
+}
+.teams-section .teams-box-section .main-teams-box .team-box .box .box-char .character .stars-4{
+    background-color: #E635E7;
+}
+.teams-section .teams-box-section .main-teams-box .team-box .box .box-char .character .stars-5{
+    background-color: #f9a825;
+}
+.teams-section .teams-box-section .main-teams-box .team-box .box .box-char .character .elements-img {
+    width: 22px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-color: #977832;
+    padding: 2px;
+    border-radius: 20px;
+    z-index: 1;
+}

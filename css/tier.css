@@ -14,6 +14,7 @@
     --yellow-color: #ffe5aa;
     --dark-yellow-color: #FFC931;
     --purple-color: #E635E7;
+    --purple-soft: #8e3ac4;
     --dark-purple-color: #451046;
 
     --bold-1: 800;
@@ -90,4 +91,109 @@ a {
 .tier-section .tier-box-section .tier-title .box-search .input-search::placeholder {
     color: var(--black-color);
     font-weight: var(--bold-3);
+}
+.tier-section .tier-box-section .tier-top-section {
+    display: flex;
+    justify-content: space-between;
+}
+.tier-section .tier-box-section .tier-top-section .disclaimer-box {
+    display: flex;
+    background-color: var(--light-yellow-color);
+    padding: 12px 90px;
+    border-radius: 4px;
+}
+.tier-section .tier-box-section .tier-top-section .disclaimer-box .disclaimer-linked {
+    color: var(--purple-soft);
+}
+.tier-section .tier-box-section .tier-top-section .create-box {
+    display: flex;
+    border-radius: 4px;
+    /* background-color: var(--purple-color); */
+    background-color: var(--purple-soft);
+    font-weight: var(--bold-1);
+}
+.tier-section .tier-box-section .tier-top-section .create-box:hover {
+    box-shadow: var(--box-shadow);
+    background-color: #9a65ba;
+    transition: .6s;
+    cursor: pointer;
+}
+.tier-section .tier-box-section .tier-top-section .create-box .create {
+    color: var(--white-color);
+    padding: 12px 26px;
+}
+.tier-section .tier-box-section .tier-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-yellow-color);
+    margin: 16px 0;
+    padding: 10px 74px;
+    border-radius: 4px;
+}
+.tier-section .tier-box-section .tier-option .tier-list {
+    cursor: pointer;
+}
+.tier-section .tier-box-section .tier-option .option-line {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 2px 0;
+}
+.tier-section .tier-box-section .tier-option .option-line .line{
+    height: 20px;
+    width: 2px;
+    background-color: #d7c08a;
+    border-radius: 16px;
+}
+.tier-section .tier-box-section .tier-box-list-section .category {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 12px 48px; */
+    border: 1px solid var(--black-color);
+}
+.tier-section .tier-box-section .tier-box-list-section .category .box {
+    padding: 12px 92px;
+    border: 1px solid var(--black-color);
+}
+.tier-section .tier-box-section .tier-box-list-section .main-category .category-layers {
+    display: flex;
+}
+.tier-section .tier-box-section .tier-box-list-section .main-category .category-layers .box {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #8e3ac4;
+}
+.tier-section .tier-box-section .tier-box-list-section .main-category .category-layers .char-box .linked-char {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d7c08a;
+}
+.tier-section .tier-box-section .tier-box-list-section .main-category .category-layers .char-box .linked-char .char {
+    width: 42px;
+    border-radius: 6px;
+}
+.tier-section .tier-box-section .tier-box-list-section .main-category .category-layers .char-box .linked-char .elements {
+    width:18px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background-color: #977832;
+    padding: 2px;
+    border-radius: 20px;
+    z-index: 1;
+}
+.tier-section .tier-box-section .tier-box-list-section .main-category .category-layers .char-box .linked-char .cons {
+    position: absolute;
+    top: 26px;
+    right: -2px;
+    background-color: var(--light-yellow-color);
+    padding: 0 2px;
+    border-radius: 4px;
+    z-index: 1;
+    font-size: 12px;
 }
